@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.11'
+    testCompile 'junit:junit:4.11','org.mybatis:mybatis:3.2.2'
 }
 
 apply plugin: 'idea'
