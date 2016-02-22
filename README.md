@@ -1,4 +1,5 @@
-*Get Started MyBaits*
+#Get Started MyBaits#
+##Bootstrap##
 1.create database *test* in mysql;
 ```sql
 create database test;
