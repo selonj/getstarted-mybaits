@@ -11,7 +11,8 @@ repositories {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.11','org.mybatis:mybatis:3.2.2','mysql:mysql-connector-java:5.1.21'
+    compile 'org.mybatis:mybatis:3.2.2'
+    testCompile 'junit:junit:4.11','mysql:mysql-connector-java:5.1.21'
 }
 
 apply plugin: 'idea'
