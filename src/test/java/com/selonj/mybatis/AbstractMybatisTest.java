@@ -21,14 +21,14 @@ abstract public class AbstractMybatisTest {
     protected SqlSession session;
 
     @Before
-    public void buildConfiguration() throws Exception {
+    final public void buildConfiguration() throws Exception {
         configuration = new Configuration(new Environment("dev", new JdbcTransactionFactory(), MySQL.dataSource()));
         SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(configuration);
         session = sessionFactory.openSession();
     }
 
     @After
-    public void closeSession() throws Exception {
+    final public void closeSession() throws Exception {
         session.close();
     }
 
