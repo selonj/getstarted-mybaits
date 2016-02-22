@@ -1,0 +1,6 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.selonj.mybatis.UserMapper">
+    <select id="list" resultType="com.selonj.mybatis.User">select * from users</select>
+</mapper>
